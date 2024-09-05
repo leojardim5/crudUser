@@ -12,7 +12,7 @@ public interface ControllerInterface<T, ID> {
 
     ResponseEntity<T> getById(@PathVariable ID id);
 
-    ResponseEntity<T> create(@RequestBody T entity);
+    ResponseEntity<T> register(@RequestBody T entity);
 
     ResponseEntity<T> update(@PathVariable ID id, @RequestBody T entityDetails);
 
