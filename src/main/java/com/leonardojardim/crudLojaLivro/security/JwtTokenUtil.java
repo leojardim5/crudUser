@@ -59,6 +59,7 @@ public class JwtTokenUtil {
         List<String> roles = userDetails.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority)
                 .collect(Collectors.toList());
+
         claims.put("roles", roles); // Adiciona as roles ao claim "roles"
         return createToken(claims, userDetails.getUsername());
     }
