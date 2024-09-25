@@ -1,13 +1,13 @@
-package com.leonardojardim.crudLojaLivro;
+package com.leonardojardim.crudUser;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CrudLojaLivroApplicationTests {
+class CrudUserTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

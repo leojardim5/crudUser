@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import io.github.cdimascio.dotenv.Dotenv;
 
 @SpringBootApplication
-public class CrudLojaLivroApplication {
+public class CrudUser {
 
     public static void main(String[] args) {
         // Carrega o arquivo .env antes de iniciar o Spring Boot
@@ -19,6 +19,6 @@ public class CrudLojaLivroApplication {
         System.setProperty("jwt_secret", dotenv.get("jwt_secret"));
 
         // Agora inicia a aplicação Spring
-        SpringApplication.run(CrudLojaLivroApplication.class, args);
+        SpringApplication.run(CrudUser.class, args);
     }
 }
